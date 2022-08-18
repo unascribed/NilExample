@@ -33,6 +33,4 @@ sources jar. You may need to delete `build/nil`.
 
 ## Another note
 NilGradle is very primitive at the moment, and can quite easily get confused.
-If things don't make sense, then delete `build/nil`. Additionally, doing
-a `./gradlew clean build` confuses the hell out of it; just do a `./gradlew
-build`.
+If things don't make sense, then delete `build/nil`.
