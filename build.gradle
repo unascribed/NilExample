@@ -1,5 +1,5 @@
 plugins {
-	id 'com.unascribed.nilgradle' version '1.4.2'
+	id 'com.unascribed.nilgradle' version '1.4.3'
 }
 
 // You can change this to be higher if you like. NilLoader itself is compiled
