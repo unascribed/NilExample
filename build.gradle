@@ -1,5 +1,5 @@
 plugins {
-	id 'com.unascribed.nilgradle' version '1.4.0'
+	id 'com.unascribed.nilgradle' version '1.4.2'
 }
 
 // You can change this to be higher if you like. NilLoader itself is compiled
@@ -43,7 +43,7 @@ nil {
 }
 
 dependencies {
-	loader 'com.unascribed:nilloader:1.2.2'
+	loader 'com.unascribed:nilloader:1.3.3'
 
 	// Any version available in the vanilla launcher can be put here, or...
 	game nil.minecraft('1.4.7', 'client')
@@ -53,13 +53,17 @@ dependencies {
 
 	// You can specify additional dependencies using the "mod" configuration to
 	// add things that will be remapped:
-	// mod 'net.minecraftforge:forge:1.4.7-6.6.2.534:universal@zip
+	//mod 'net.minecraftforge:forge:1.4.7-6.6.2.534:universal@zip
+	// Though, for Forge, you should use jarmod instead so it properly overwrites game classes:
+	//jarmod 'net.minecraftforge:forge:1.4.7-6.6.2.534:universal@zip
 
 	// If you have a dependency named after your via mappings (e.g. SRG/Intermediary)
 	// rather than raw obf names, then you can use modVia:
-	// modVia 'dev.emi:emi:0.3.3+1.4'
+	//modVia 'dev.emi:emi:0.3.3+1.4'
 
 	// Normal libraries can be added with the usual "implementation" configuration.
+	// NilGradle doesn't understand transitive game dependencies, so you will likely want to
+	// add LWJGL, Gson, Guava, or whatever the thing you're modifying depends on.
 }
 
 mappings {
