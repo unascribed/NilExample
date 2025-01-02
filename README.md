@@ -7,11 +7,6 @@ If you're here, you should either have a specific use case (e.g. wanting to
 patch mods on old versions with broken tooling) or just want to mess around with
 a new toy for the sake of it.
 
-Additionally, NilLoader is currently *experimental* and ***API/ABI stability is
-not yet guaranteed***.
-
-If you're okay with that, then cool. Let's continue.
-
 ## Steps to use the template
 1. You must pick a unique nilmod ID and put it in build.gradle. You will then
 	have to rename src/main/resources/modid.nilmod.css to use your ID.
